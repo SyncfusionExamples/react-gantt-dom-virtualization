@@ -1,0 +1,142 @@
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #202a35;
+  background: #f4f6f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+.app-shell {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #667789;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: #1c2834;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.page-description {
+  margin: 8px 0 0;
+  color: #607080;
+  font-size: 14px;
+}
+
+.record-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.record-button {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid #cbd4dd;
+  border-radius: 4px;
+  background: #fff;
+  color: #344454;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.record-button:hover {
+  border-color: #53738e;
+  background: #f5f8fa;
+}
+
+.record-button:focus-visible {
+  outline: 3px solid #8bb9da;
+  outline-offset: 2px;
+}
+
+.record-button.is-active {
+  border-color: #176b9b;
+  background: #176b9b;
+  color: #fff;
+}
+
+.chart-panel {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dce2e8;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.chart-toolbar {
+  display: flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 18px;
+  border-bottom: 1px solid #e4e9ee;
+}
+
+.chart-label {
+  color: #344454;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.record-count {
+  color: #667789;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 700px) {
+  .app-shell {
+    padding: 24px 16px;
+  }
+
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .record-controls {
+    width: 100%;
+  }
+
+  .record-button {
+    flex: 1 1 100px;
+    padding: 0 10px;
+  }
+}
